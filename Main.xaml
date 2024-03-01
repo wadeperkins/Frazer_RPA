@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1427,46206</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1794,46051</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -197,7 +197,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1175,46141" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1175,45946" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -314,23 +314,23 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotCredential>
-    <If Condition="[NOT IsNothing(Username) And NOT IsNothing(Password)]" sap:VirtualizedContainerService.HintSize="1113,45004" sap2010:WorkflowViewState.IdRef="If_18">
+    <If Condition="[NOT IsNothing(Username) And NOT IsNothing(Password)]" sap:VirtualizedContainerService.HintSize="1113,44809" sap2010:WorkflowViewState.IdRef="If_18">
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="1079,44822" sap2010:WorkflowViewState.IdRef="Sequence_107">
+        <Sequence sap:VirtualizedContainerService.HintSize="1079,44627" sap2010:WorkflowViewState.IdRef="Sequence_107">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1037,44734" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1037,44539" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <TryCatch.Try>
-              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: SL TEST Environment" sap:VirtualizedContainerService.HintSize="999,43898" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: SL TEST Environment" sap:VirtualizedContainerService.HintSize="999,43703" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V2" WindowResize="Maximize">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="965,43681" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="965,43486" sap2010:WorkflowViewState.IdRef="Sequence_2">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -488,7 +488,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <uix:NKeyboardShortcuts ActivateBefore="True" sap2010:Annotation.AnnotationText="Open the form search engine in SL w/ keyboard shortcut. " ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="903,224" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][d(ctrl)]o[u(ctrl)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts ActivateBefore="True" sap2010:Annotation.AnnotationText="Open the form search engine in SL w/ keyboard shortcut. " ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="903,221" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][d(ctrl)]o[u(ctrl)][u(hk)]" Version="V3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -519,7 +519,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <p:CVScope ContinueOnError="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" sap2010:Annotation.AnnotationText="Unselect the checkbox in the Gen AP form." CvMethod="ElementDetection, OCR" DelayBefore="1" DesignTimeCacheId="26cfa044-b30f-4f2f-93e6-037eb701cb12" DisplayName="CV Screen Scope 'DIV  mggrpbox-1162'" sap:VirtualizedContainerService.HintSize="903,510" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
+                      <p:CVScope ContinueOnError="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" sap2010:Annotation.AnnotationText="Unselect the checkbox in the Gen AP form." CvMethod="ElementDetection, OCR" DelayBefore="1" DesignTimeCacheId="26cfa044-b30f-4f2f-93e6-037eb701cb12" DisplayName="CV Screen Scope 'DIV  mggrpbox-1162'" sap:VirtualizedContainerService.HintSize="903,509" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
                         <p:CVScope.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
@@ -531,7 +531,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <p:CvCheckWithDescriptor DelayScreenshotAfterScroll="{x:Null}" InRegion="{x:Null}" Action="Uncheck" Descriptor="[&quot;Target: CheckBox (208,22,17,18)&quot; +&#xA;&quot;Anchor: Text 'Find By Purchase Order Number' (227,23,177,14)&quot;]" DesignTimeCacheId="7b67f1c8-5a93-429e-9abb-2450db7ab0b3" DesignTimeScaleFactor="1" DisplayName="CV Check - CheckBox" sap:VirtualizedContainerService.HintSize="400,138" sap2010:WorkflowViewState.IdRef="CvCheckWithDescriptor_2" InformativeScreenshot="11f96daee12a65c0cd6ac08259d4ac73" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                              <p:CvCheckWithDescriptor DelayScreenshotAfterScroll="{x:Null}" InRegion="{x:Null}" Action="Uncheck" Descriptor="[&quot;Target: CheckBox (208,22,17,18)&quot; +&#xA;&quot;Anchor: Text 'Find By Purchase Order Number' (227,23,177,14)&quot;]" DesignTimeCacheId="7b67f1c8-5a93-429e-9abb-2450db7ab0b3" DesignTimeScaleFactor="1" DisplayName="CV Check - CheckBox" sap:VirtualizedContainerService.HintSize="400,137" sap2010:WorkflowViewState.IdRef="CvCheckWithDescriptor_2" InformativeScreenshot="11f96daee12a65c0cd6ac08259d4ac73" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                                 <p:CvCheckWithDescriptor.DesignTimeDescriptor>
                                   <uc:CvDescriptor Id="89478504-4af5-4a39-99f6-5a94add9f064">
                                     <uc:CvDescriptor.Anchors>
@@ -999,7 +999,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </p:CVScope>
-                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Type &quot;AMAZ001&quot; into the vendor box in the Gen AP form." ClickBeforeMode="Single" DelayAfter="3" DelayBefore="2" DisplayName="Type Into 'INPUT mgcombo-1159-inpu…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="903,263" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Text="AMAZ001" Timeout="20" Version="V3">
+                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Type &quot;AMAZ001&quot; into the vendor box in the Gen AP form." ClickBeforeMode="Single" DelayAfter="3" DelayBefore="2" DisplayName="Type Into 'INPUT mgcombo-1159-inpu…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="903,260" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Text="AMAZ001" Timeout="20" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=GenerateAPTransactions" CvElementArea="666, 264, 82, 25" CvType="InputBox" DesignTimeRectangle="368, 244, 56, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT mgcombo-1159-inpu…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='x-form-field x-form-text x-form-text-default  x-form-focus x-field-form-focus x-field-default-form-focus' aaname='Vendor:' /&gt;" Guid="e0382d06-d044-48a1-a5a0-3966fad18df1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAZCAYAAABtnU33AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACuSURBVFhH7ZjBDcIwDEUzTa+VGI0h6D6s0gPMEKAVUkUopf7kV770wAK2n2Ql1ycnVvJTWQTTR/CcBcNbcC8rbkWQX2strrYqUfaav2i6Een4sF/sbHMacO5neCDxGNPcC4l31pUwB5QrYU5ji8Jte9Ddnipss8MhrISwFUJYCWErhLASwlYIYaUKO3tLW/0t/RV29x92l3hsmVY3+sm0mFpe8rIFeey0+fKVSwt+VVhJIOXQ+20AAAAASUVORK5CYII=" InformativeScreenshot="903191ab2cbaa7e1da3749f70265998a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                         </uix:NTypeInto.Target>
@@ -1179,16 +1179,15 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </Assign>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="903,143" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[POData]" />
-                      <ui:CommentOut sap2010:Annotation.AnnotationText="This is the production Google Drive location" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="903,450" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                      <ui:CommentOut sap2010:Annotation.AnnotationText="This is the production Google Drive location" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="903,445" sap2010:WorkflowViewState.IdRef="CommentOut_15">
                         <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,340" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,335" sap2010:WorkflowViewState.IdRef="Sequence_67">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntryLocation="{x:Null}" MaxResults="{x:Null}" AllLabels="W10=" sap2010:Annotation.AnnotationText="Go to the invoices google drive, go to the TBP folder, then filter the folder on Amazon business invoices and place the retreived filed into an output variable called matches." AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1C86JWmUkqTz76UGSADddeeOgOuW87AJE" ConnectionId="8840a299-987f-4041-aa34-2c68c904100f" DisplayName="Get File/Folder List" sap:VirtualizedContainerService.HintSize="388,229" sap2010:WorkflowViewState.IdRef="GetFileListConnections_6" LocationFriendlyName="AP TBP" LocationInputMode="Browse" Result="[Matches]" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
+                            <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" ManualEntryLocation="{x:Null}" MaxResults="{x:Null}" AllLabels="W10=" sap2010:Annotation.AnnotationText="Go to the invoices google drive, go to the TBP folder, then filter the folder on Amazon business invoices and place the retreived filed into an output variable called matches." AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1C86JWmUkqTz76UGSADddeeOgOuW87AJE" DisplayName="Get File/Folder List" sap:VirtualizedContainerService.HintSize="388,224" sap2010:WorkflowViewState.IdRef="GetFileListConnections_6" LocationFriendlyName="AP TBP" LocationInputMode="Browse" Result="[Matches]" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
                               <uga:GetFileListConnections.Filter>
                                 <ugadf:FileFilterArgument LogicalOperator="And">
                                   <ugadf:FileFilterArgument.Filters>
