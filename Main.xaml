@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1294,46091</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1427,46403</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -197,7 +197,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1304,46026" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1304,46338" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -315,23 +315,23 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotCredential>
-    <If Condition="[NOT IsNothing(Username) And NOT IsNothing(Password)]" sap:VirtualizedContainerService.HintSize="1242,44889" sap2010:WorkflowViewState.IdRef="If_18">
+    <If Condition="[NOT IsNothing(Username) And NOT IsNothing(Password)]" sap:VirtualizedContainerService.HintSize="1242,45201" sap2010:WorkflowViewState.IdRef="If_18">
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="1208,44707" sap2010:WorkflowViewState.IdRef="Sequence_107">
+        <Sequence sap:VirtualizedContainerService.HintSize="1208,45019" sap2010:WorkflowViewState.IdRef="Sequence_107">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1166,44619" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1166,44931" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <TryCatch.Try>
-              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: SL TEST Environment" sap:VirtualizedContainerService.HintSize="1128,43790" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: SL TEST Environment" sap:VirtualizedContainerService.HintSize="1128,44102" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V2" WindowResize="Maximize">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1094,43533" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1094,43845" sap2010:WorkflowViewState.IdRef="Sequence_2">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Int32" Name="tempcount" />
                       </Sequence.Variables>
@@ -341,14 +341,14 @@
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <p:CVScope DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" sap2010:Annotation.AnnotationText="Check to see if the Sign In button on Syteline exists" ContinueOnError="True" CvMethod="ElementDetection, OCR" DesignTimeCacheId="6719e23f-a108-40c4-b5b6-ac7ff92e001b" DisplayName="CV Screen Scope 'DIV  mgSignInForm-targe...'" sap:VirtualizedContainerService.HintSize="1032,510" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                      <p:CVScope DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" sap2010:Annotation.AnnotationText="Check to see if the Sign In button on Syteline exists" ContinueOnError="True" CvMethod="ElementDetection, OCR" DesignTimeCacheId="6719e23f-a108-40c4-b5b6-ac7ff92e001b" DisplayName="CV Screen Scope 'DIV  mgSignInForm-targe...'" sap:VirtualizedContainerService.HintSize="1032,509" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                         <p:CVScope.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
                             </ActivityAction.Argument>
                             <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                              <p:CvElementExistsWithDescriptor DelayScreenshotAfterScroll="{x:Null}" Descriptor="[&quot;Target: Button (789,65,338,35)&quot; +&#xA;&quot;Anchor: Text 'Sign In' (936,74,46,17)&quot;]" DesignTimeCacheId="6719e23f-a108-40c4-b5b6-ac7ff92e001b" DesignTimeScaleFactor="1" DisplayName="SignIn Button" sap:VirtualizedContainerService.HintSize="400,138" sap2010:WorkflowViewState.IdRef="CvElementExistsWithDescriptor_2" InformativeScreenshot="3aaa766f3e3089627cc52cdc06f9817c" NumberOfScrolls="2" Result="[LoginExists]" ScrollDirection="None" Version="V6">
+                              <p:CvElementExistsWithDescriptor DelayScreenshotAfterScroll="{x:Null}" Descriptor="[&quot;Target: Button (789,65,338,35)&quot; +&#xA;&quot;Anchor: Text 'Sign In' (936,74,46,17)&quot;]" DesignTimeCacheId="6719e23f-a108-40c4-b5b6-ac7ff92e001b" DesignTimeScaleFactor="1" DisplayName="SignIn Button" sap:VirtualizedContainerService.HintSize="400,137" sap2010:WorkflowViewState.IdRef="CvElementExistsWithDescriptor_2" InformativeScreenshot="3aaa766f3e3089627cc52cdc06f9817c" NumberOfScrolls="2" Result="[LoginExists]" ScrollDirection="None" Version="V6">
                                 <p:CvElementExistsWithDescriptor.DesignTimeDescriptor>
                                   <uc:CvDescriptor Id="9112438a-d024-48c2-aa82-f8042c28d099">
                                     <uc:CvDescriptor.Anchors>
@@ -499,7 +499,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NKeyboardShortcuts>
-                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Search for the form mentioned in this step. " ClickBeforeMode="None" DelayAfter="1" DelayBefore="1" DelayBetweenKeys="0.2" DisplayName="Type Into 'Generate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1032,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="Simulate" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Text="Generate A/P Transactions" Version="V3">
+                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Search for the form mentioned in this step. " ClickBeforeMode="None" DelayAfter="1" DelayBefore="1" DelayBetweenKeys="0.2" DisplayName="Type Into 'Generate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1032,249" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="Simulate" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Text="Generate A/P Transactions" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=lc_ClickOnce_Files" CvElementArea="710, 635, 152, 24" CvTextArea="714, 639, 53, 13" CvTextArgument="Generate" CvType="InputBox" DesignTimeRectangle="712, 620, 148, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Generate'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='x-form-field x-form-text x-form-text-default  x-form-focus x-field-form-focus x-field-default-form-focus' aaname='' /&gt;" Guid="c670b6eb-62a6-4d22-8344-843c3d3578f2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJgAAAAYCAYAAAAGcjT5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHuSURBVGhD7ZvBjcMgEEW3JtdDFxTi4x62AKJ04A7SS/aWAmYzgwcP2MbZdUxW0X/SlwLGBImnIQfyQQAciAh2u90ohDN9fn4hyO6wS+xUEux0OtP1+i0dAOyFXWLJGBGMrQPgmahTEAwcQlWwy+XydgFtgWDgUB4TbOjJdR11KY76Id+41ySQ/+VaQFu2BQtepPLBbJT0eQraflkg2H9nQ7CBeteR64dio2L/JF1sa4VL/VL5PHm/8IwzyitxPQ1mLuecGc8iTXN0PqRxsU8lW1mHCWhLXTARZLtCBBZINv3eFmnGd8ajVQWVcSpSNvcohhVH51PhVPLsvbyCra5D5okBbXlAMHsU5pUkbnrsK6uZtEtBedNHwYb+XqFS1bLPCqFmsVKVn1fWYd4HbflzBeNqYQVT6TL5SkFLwWbv8dgFMaQa2XHrguXj5qKCttQFq1STXLBlCTcFS8egTSlYWZlKqZY+rwe0ZUOw+6aM1WOpoqh42W8fkWocXxGsrI7T77O6YLHyLUu1ug6ZJwa0ZVswSdzk6egpK0WUQp+nilcTTNtpTh03PyLtcer6YJ7r9+p6VtZhAtryoGDvE9AWCAYOBYKBQ6kKBsBeIBg4lEwwvt6KK9PgWcyuTPMFfb6Xz9YhyN7M/vQBwDEQ/QDksl3RkJBI8gAAAABJRU5ErkJggg==" InformativeScreenshot="8c163d5f29f52952865869aedd895ecc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                         </uix:NTypeInto.Target>
@@ -509,7 +509,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NTypeInto>
-                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click the exact fom we're interested in, mentioned in the previous activity. " ClickType="Double" DisplayName="Click 'Generate A/P'" sap:VirtualizedContainerService.HintSize="1032,202" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
+                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click the exact fom we're interested in, mentioned in the previous activity. " ClickType="Double" DisplayName="Click 'Generate A/P'" sap:VirtualizedContainerService.HintSize="1032,199" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable Accuracy="0.9" BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=lc_ClickOnce_Files" CvTextArea="678, 462, 145, 14" CvTextArgument="Generate A/P Transactions" CvType="Text" DesignTimeRectangle="667, 343, 304, 27" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Generate A/P'" FullSelectorArgument="&lt;webctrl class='x-grid-item' idx='4' parentid='ext-element-14' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='x-grid-item' parentid='ext-element-14' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='x-grid-cell-inner ' aaname='Generate A/P Transactions' check:innerText='Generate A/P Transactions' /&gt;" Guid="5b1bdc7c-8e35-4a98-b8d8-910ade3f7bca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATAAAAAbCAYAAAD759OyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOSSURBVHhe7Z1NjuIwEIW5IfeZZW9yFI7CAolrcALWGdePnapKOdAhUmPpfZI1JC7b5cLv4ZnNnG632/x8PmcAABiNZmD3+x0NDQ1tqIYbGABgWGBgAIBhgYEBAIYFBgYAGBYYGABgWGBgAIBhgYEBAIZlv4E9LvP5dJpPrZ3ny0P7/pTrPO3O5TFfzmUv01WfLdRH89L8dt/akjHXKYnjNpUsvwz+PmteUoe0DAB8EfsM7DqxEN0B53ffIMwPDIz2ME1lfLIPEvj5UqQtBubF/Urw2ZgvwxkYAGOww8BErOeVQ0QRy3O9dbT3KpTJ3E6csNUcubFhELpmuQEt8eEmxC/tmtXEOnkk0I2J+unP1f7Y3GhwbkbpmEYyhuYr++FbrO7zcZH9+fx17mKs7cbb6lKw9XIGlNVHsbdnY8rLHOG7TL+TvXkBcBy/NzA+/K9vOHS4m2j4MOsYFU8VO8fVg+/mVuPhOexnQp6bYbhxJEYv/jSPFTROhUbzWTEWaB6ZJjGj9J0l6Y+58PMidJs3f7a5tbn8XskApSa/qw/HcUxd3xiYW89/D7/PC4Bj2Wlgi9DksNJBliYHNQo2CiIIV82CbyDxV5yfgyBXWMHEz508IrRW66A4kyPPU/cscy63C7vvHjGPQjCsCNdCB1gz83uwe93CxJl6O3oGFuNN3p/nBcBnHHoDa7/mfIC9wJvIowEagfi/QtVGsYnxsJBsXM3Jimcjj4DcJjpxlHMTsczpcnlJMmZlJLJHl4MOWOpKhFpwPTV+ZTRmLq3J6kei0jGwVbyJ25UXAAdy4L+B2QNtTSTghFKIBuZUXgniWBmCXa/3eQPOKcSZPCmvZb9x7XdIxgQDi0Zha7FpFIZlTFzP1GFlnIr7XswaMZ6N8Q0DM/S/VwA+Y4eBFfgQJ4Is7+qBpsPdDq3+GvPjhoFJ32IkPAf3bRsYC6RjWt08DNE8hLoGrW3NLZrDOyRjgjH4HCT+pYGFWtIcEufXc/XJakyBbq64Rp1L3u/PC4Bj2WdgjIqsNStyQg+79rcDHA53FDI/tzkTQSkiyjr31fTXdWs+nTwa0p8JTAz0Z/5n89V921xe89rAakzbt+nvGgU9mTqsDFHf+/oUbI2jafJeQ73T+H15AXAkHxgYAAD8LTAwAMCwwMAAAMMCAwMADAsMDAAwLDAwAMCwwMAAAMPSDCz7P9fQ0NDQvrnhBgYAGJR5/g/UpS5kRCYqBgAAAABJRU5ErkJggg==" InformativeScreenshot="d7638075328f0dec034b8e7c60d9f46c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor SyteLine (Test)' /&gt;" SearchSteps="Image" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.PointOffset>
@@ -523,7 +523,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <p:CVScope ContinueOnError="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" sap2010:Annotation.AnnotationText="Unselect the checkbox in the Gen AP form." CvMethod="ElementDetection, OCR" DelayBefore="1" DesignTimeCacheId="26cfa044-b30f-4f2f-93e6-037eb701cb12" DisplayName="CV Screen Scope 'DIV  mggrpbox-1162'" sap:VirtualizedContainerService.HintSize="1032,550" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
+                      <p:CVScope ContinueOnError="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" sap2010:Annotation.AnnotationText="Unselect the checkbox in the Gen AP form." CvMethod="ElementDetection, OCR" DelayBefore="1" DesignTimeCacheId="26cfa044-b30f-4f2f-93e6-037eb701cb12" DisplayName="CV Screen Scope 'DIV  mggrpbox-1162'" sap:VirtualizedContainerService.HintSize="1032,509" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
                         <p:CVScope.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
@@ -535,7 +535,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <p:CvCheckWithDescriptor DelayScreenshotAfterScroll="{x:Null}" InRegion="{x:Null}" Action="Uncheck" Descriptor="[&quot;Target: CheckBox (208,22,17,18)&quot; +&#xA;&quot;Anchor: Text 'Find By Purchase Order Number' (227,23,177,14)&quot;]" DesignTimeCacheId="7b67f1c8-5a93-429e-9abb-2450db7ab0b3" DesignTimeScaleFactor="1" DisplayName="CV Check - CheckBox" sap:VirtualizedContainerService.HintSize="400,138" sap2010:WorkflowViewState.IdRef="CvCheckWithDescriptor_2" InformativeScreenshot="11f96daee12a65c0cd6ac08259d4ac73" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                              <p:CvCheckWithDescriptor DelayScreenshotAfterScroll="{x:Null}" InRegion="{x:Null}" Action="Uncheck" Descriptor="[&quot;Target: CheckBox (208,22,17,18)&quot; +&#xA;&quot;Anchor: Text 'Find By Purchase Order Number' (227,23,177,14)&quot;]" DesignTimeCacheId="7b67f1c8-5a93-429e-9abb-2450db7ab0b3" DesignTimeScaleFactor="1" DisplayName="CV Check - CheckBox" sap:VirtualizedContainerService.HintSize="400,137" sap2010:WorkflowViewState.IdRef="CvCheckWithDescriptor_2" InformativeScreenshot="11f96daee12a65c0cd6ac08259d4ac73" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                                 <p:CvCheckWithDescriptor.DesignTimeDescriptor>
                                   <uc:CvDescriptor Id="89478504-4af5-4a39-99f6-5a94add9f064">
                                     <uc:CvDescriptor.Anchors>
@@ -1003,7 +1003,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </p:CVScope>
-                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Type &quot;AMAZ001&quot; into the vendor box in the Gen AP form." ClickBeforeMode="Single" DelayAfter="3" DelayBefore="2" DisplayName="Type Into 'INPUT mgcombo-1159-inpu…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1032,263" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Text="AMAZ001" Timeout="20" Version="V3">
+                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Type &quot;AMAZ001&quot; into the vendor box in the Gen AP form." ClickBeforeMode="Single" DelayAfter="3" DelayBefore="2" DisplayName="Type Into 'INPUT mgcombo-1159-inpu…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1032,260" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Text="AMAZ001" Timeout="20" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=GenerateAPTransactions" CvElementArea="666, 264, 82, 25" CvType="InputBox" DesignTimeRectangle="368, 244, 56, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT mgcombo-1159-inpu…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='x-form-field x-form-text x-form-text-default  x-form-focus x-field-form-focus x-field-default-form-focus' aaname='Vendor:' /&gt;" Guid="e0382d06-d044-48a1-a5a0-3966fad18df1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAZCAYAAABtnU33AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACuSURBVFhH7ZjBDcIwDEUzTa+VGI0h6D6s0gPMEKAVUkUopf7kV770wAK2n2Ql1ycnVvJTWQTTR/CcBcNbcC8rbkWQX2strrYqUfaav2i6Een4sF/sbHMacO5neCDxGNPcC4l31pUwB5QrYU5ji8Jte9Ddnipss8MhrISwFUJYCWErhLASwlYIYaUKO3tLW/0t/RV29x92l3hsmVY3+sm0mFpe8rIFeey0+fKVSwt+VVhJIOXQ+20AAAAASUVORK5CYII=" InformativeScreenshot="903191ab2cbaa7e1da3749f70265998a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                         </uix:NTypeInto.Target>
@@ -1013,14 +1013,14 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NTypeInto>
-                      <uix:NKeyboardShortcuts ActivateBefore="True" sap2010:Annotation.AnnotationText="Keyboard Shortcut to ensure that the correct vendor is selected. " ClickBeforeMode="None" DelayAfter="1" DelayBefore="3" DelayBetweenShortcuts="1" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1032,224" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts ActivateBefore="True" sap2010:Annotation.AnnotationText="Keyboard Shortcut to ensure that the correct vendor is selected. " ClickBeforeMode="None" DelayAfter="1" DelayBefore="3" DelayBetweenShortcuts="1" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1032,221" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NKeyboardShortcuts>
-                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click filter in place. " ClickType="Single" DelayAfter="1" DelayBefore="8" DisplayName="Click 'FiP'" sap:VirtualizedContainerService.HintSize="1032,189" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
+                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click filter in place. " ClickType="Single" DelayAfter="1" DelayBefore="8" DisplayName="Click 'FiP'" sap:VirtualizedContainerService.HintSize="1032,188" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable Accuracy="0.9" BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=GenerateAPTransactions" CvElementArea="483, 156, 25, 24" CvType="Icon" DesignTimeRectangle="179, 130, 33, 33" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'FiP'" FullSelectorArgument="&lt;webctrl id='ext-element-23' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-element-23' tag='BUTTON' type='' class='btn-icon' aaname='FiP' check:innerText='FiP' /&gt;" Guid="1eb29596-7c3d-4916-b56c-d06062ec97d3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABuSURBVFhHxcwxCoBAEARB3+y/7w1nJgZ1qCDtQCXNstu2j/k7xhpjjbHGWGOsMdYYa4w1xhpjjfHiq+n3ibHGWGOsMdYYa4wLb6cfxFhjrDHWGGuMNcYHVtPtLcYaY42xxlhjrDHWGGuMNcbUmAchx0ytaamB3QAAAABJRU5ErkJggg==" InformativeScreenshot="7f4e819c2e524ff4e5a1d131f3377077.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor SyteLine (Test)' /&gt;" SearchSteps="Image" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -1030,7 +1030,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Navigates you to the PO Selection tab within the Gen AP form. " ClickType="Single" DelayBefore="7" DisplayName="Click 'PO Selection'" sap:VirtualizedContainerService.HintSize="1032,202" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
+                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Navigates you to the PO Selection tab within the Gen AP form. " ClickType="Single" DelayBefore="7" DisplayName="Click 'PO Selection'" sap:VirtualizedContainerService.HintSize="1032,199" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable Accuracy="0.91" BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=GenerateAPTransactions" CvTextArea="672, 408, 71, 12" CvTextArgument="PO Selection" CvType="Text" DesignTimeRectangle="363, 380, 90, 28" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'PO Selection'" FullSelectorArgument="&lt;webctrl aaname='PO Selection' aria-role='heading' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='PO Selection' aria-role='heading' tag='SPAN' type='' class='x-tab-inner x-tab-inner-default' check:innerText='PO Selection' /&gt;" Guid="c7f08e93-577f-4f78-85bb-a6b4efd77a5a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAcCAYAAADhqahzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHASURBVGhD7ZbRjcMgDEDZkLEYJSNUugUySsbgwAZjTCAX5er2w0+KlAbH4GeI6qKhgolWwkQrYaKVMNFKmGglTLQSJlqJG6L3GJyLTl5hL+OFY4t+NS6R8X6LRxmac8TNu3iVegrMGVJF4v6N3BbdFycK3kOS5ePGTO1hIa9I5jmX8cQ/ilbioWgU48HsrPiFFGiMKBgksGZBjNztImdpGMad5ePv85OZYqX01XyBjd3s8kPR7Nlil8AuPTddiu5PAdFJx2IxDxfdr6s/EXms5aZNwdc63Ndc43yU9+TkXvH4G427ObEQfWx+uQNgnHK2AuA5SUvkAuE3Ey1PBV8HxQtmomU85cb5qNb0hDfwLzz+dBAPRHcwcX0D6tUKb6JlDEoYGlWZiB7iaYzNB3xS9LCYyuw5FtZ2SaUVMW+QEH0mMzMbm4ge4qnpXyU6AQvrF7D8FwFF9vG4i7mENt5y8cL7dV2+nwNnouG+5sI5+De6zoFzflJ0piyWjvHVCzK+Fl2B5skxUXiXQwjg71PDsRbIx0VnTuNVRRtPMNFKmGglTLQSJloJE62EiVbCRCthopVwr9dPtOv9l+1oFWL8BTpj3P161aqzAAAAAElFTkSuQmCC" InformativeScreenshot="e8d29fa2ebdaffb959d6db36d115eb53.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor SyteLine (Test)' /&gt;" SearchSteps="Image" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -1040,7 +1040,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Necessary step to edit grid columns." ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click '* PO'" sap:VirtualizedContainerService.HintSize="1032,189" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
+                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Necessary step to edit grid columns." ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click '* PO'" sap:VirtualizedContainerService.HintSize="1032,188" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable Accuracy="0.94" BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=GenerateAPTransactions" CvTextArea="804, 526, 19, 12" CvTextArgument="PO" CvType="Text" DesignTimeRectangle="447, 495, 89, 33" DesignTimeScaleFactor="1" FriendlyName="'* PO'" FullSelectorArgument="&lt;webctrl class='x-column-header-text-wrapper' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='x-column-header-text-wrapper' type='' aaname='' tag='DIV' check:innerText='PO' /&gt;" Guid="70bdf33d-3b59-43eb-a428-b9349959205e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAhCAYAAACyegcDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEnSURBVGhD7ZhRDkQwEED3dn72fhJHqVPwY785ggPMRuluVWwntZqIJ5HQ0PA682Z4FMVT2M9h0HUvy/YB4HMAT1yBnCGDgQzk81I4px6JZCKZSKblU2YBulCCOuJwIAMZJ1/TyWUro2y33qwX1PTBNX2d/L7308UCeWyqBVoljaU+iLHqCM+nsVos87GVMkEvQJ6gmcGGrY1m/9gHujeugA7kAPKsiVGaMqgHmwzQ1wsgB3qYITt1+CAXZSS4+baQ12XtG7lEssJ/0Y+GWNrjZL0Hd2HHIH/04XnZtX10F8oFiEKe56FP/oc2Ms5xv8KXEa5TFpAzQAcykJXFLAOoaGv44xmI5AwLBGQgo4vkn9hH/HbFe9EFukAX6EKZBehCCepILXCQ39tCB/D1C46eAAAAAElFTkSuQmCC" InformativeScreenshot="9f94b85dc1ca1a1d2f7c88a6700c4588.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor SyteLine (Test)' /&gt;" SearchSteps="Image" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -1050,19 +1050,19 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Edit Grid Columns...'" sap:VirtualizedContainerService.HintSize="1032,158" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Edit Grid Columns...'" sap:VirtualizedContainerService.HintSize="1032,157" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=GenerateAPTransactions" DesignTimeRectangle="497, 529, 111, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Edit Grid Columns...'" FullSelectorArgument="&lt;webctrl aaname='Edit Grid Columns...' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Edit Grid Columns...' tag='SPAN' type='' class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' check:innerText='Edit Grid Columns...' /&gt;" Guid="8f1b19c2-e1ad-4c7d-aa8e-687588904f79" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG8AAAAQCAYAAAAYsSF0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI1SURBVFhH7ViJjQMhDEy1dEEZ1EIZK10TWwYH5hvMn1OkzYlIkbJaGz/jsU1e5ny+NgOvr/X8OG4OeF9cBADeZZQQRlRfafTdiPBSVlaZy71yv6U2TuxSwsimQjjj1kYWNjrnk/httBRGkRH2QfstAOh9jmfoU9If2HsgyBV4zUR1kxPAg/dD8EJCCxszEHpJG+nROywKD8ocwP8MHrBGqZp5P1qmaq8T1UsgJizISH+Oulgye/YLgDt2SBeKDZkZukbB9JZ8lAudRtsu49ltzwXfUuwkp4yyhePloKCKzlCTYIXoG8zzbTU65hi21TYpuFGLzG1SJGoieAP7GOmKnZBob8bb8DbB3gw8Ki7QxxFS/GZypORiybm4bdHPu0IN53zmxWrjweDzyszj+hQAn0mcNYNkVufhTJ1UMvhLWqkF74CXbRSjgucF2O5A8kVSgrfCspbMOvP4jHkLvDbzcvB85sDzyP4m8yiJqVU6wsWWugEe6A/BA7kMXrQZihd92UByHby/Mi+0pFZ7WAJvZH9l5lG119vxKvMKwBlz3wIPfC5A/Qh4LPnbMy+1J7b6h8HtQR0wb2SfB9zZNtMsXZ55bF6xhSXeoLbBY4X4uZmXBnNJdal1s5KpimCxqQuJ3yfrlT5fJfrbZmG/Va3snpeXoCA82zYp3Lg9Wx91vsvivdbXJFxDOuOEVps08/Bs2zpXWnBjTp5/WDba1NNED3hPQ2TDnwPeRrKeJnrAexoiG/78ArPLqpbLO+z9AAAAAElFTkSuQmCC" InformativeScreenshot="cbb0f24ef4b819b044e3364a3baae6e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor SyteLine (Test)' /&gt;" SearchSteps="Image" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NMouseScroll KeyModifiers="{x:Null}" sap2010:Annotation.AnnotationText="Scroll down edit grid columns tab. " DelayBefore="3" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1032,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                      <uix:NMouseScroll KeyModifiers="{x:Null}" sap2010:Annotation.AnnotationText="Scroll down edit grid columns tab. " DelayBefore="3" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1032,168" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NMouseScroll>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'Line'" sap:VirtualizedContainerService.HintSize="1032,158" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'Line'" sap:VirtualizedContainerService.HintSize="1032,157" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=GenerateAPTransactions" CvElementArea="706, 530, 16, 15" CvType="CheckBox" DesignTimeRectangle="704, 392, 19, 19" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl class='x-grid-item' idx='21' parentid='gridview-1362' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl class='x-grid-item' parentid='gridview-1362' tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='x-grid-checkcolumn x-grid-checkcolumn-checked' aaname='' /&gt;" Guid="a8317f5b-360b-461f-9cbd-a5d2c1c6f96d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADZSURBVDhPtZQ9CoQwEIW9/wHEgDZiIdhpZcgRcgUxYGEjgmKn8pYJKFF2N/4OpMrMl/eGmTh4MJwHWXgPxhjD2WM62ygj0JnY51+CjeMIKaV2cUsZgTjn8H3/HoxAeZ7D8zyUZXkdNk2TVkTWCERhtVlVFZqm2fTCVKSUWu+ssDRNEYYh2rbVRaTItGa+YoV1XYc4jhFFEeq6hhBC98hUtACtMEochgFJksB1XQRBsPZoP4OHYFTU9z2yLENRFD/n+DCMCPM8/10IK+yx3Tyzl99y3/uC7ir7ADJpS+wABjEQAAAAAElFTkSuQmCC" InformativeScreenshot="c6c85cc1a2d6aa386fa02c1453da9134.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor SyteLine (Test)' /&gt;" SearchSteps="Image" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -1073,7 +1073,7 @@
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'To Vch/Adj'" sap:VirtualizedContainerService.HintSize="1032,158" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'To Vch/Adj'" sap:VirtualizedContainerService.HintSize="1032,157" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable Accuracy="0.85" BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=GenerateAPTransactions" CvElementArea="705, 552, 16, 16" CvType="CheckBox" DesignTimeRectangle="704, 415, 19, 19" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl class='x-grid-item' idx='22' parentid='gridview-1362' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl class='x-grid-item' parentid='gridview-1362' tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='x-grid-checkcolumn x-grid-checkcolumn-checked' aaname='' /&gt;" Guid="6104024f-a049-4234-80fd-9a3a8d7bf118" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADZSURBVDhPtZQ9CoQwEIW9/wHEgDZiIdhpZcgRcgUxYGEjgmKn8pYJKFF2N/4OpMrMl/eGmTh4MJwHWXgPxhjD2WM62ygj0JnY51+CjeMIKaV2cUsZgTjn8H3/HoxAeZ7D8zyUZXkdNk2TVkTWCERhtVlVFZqm2fTCVKSUWu+ssDRNEYYh2rbVRaTItGa+YoV1XYc4jhFFEeq6hhBC98hUtACtMEochgFJksB1XQRBsPZoP4OHYFTU9z2yLENRFD/n+DCMCPM8/10IK+yx3Tyzl99y3/uC7ir7ADJpS+wABjEQAAAAAElFTkSuQmCC" InformativeScreenshot="125306dce296a9cdccccccc878366a66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor SyteLine (Test)' /&gt;" SearchSteps="Image" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -1084,19 +1084,19 @@
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Double" DelayBefore="1" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="1032,158" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Double" DelayBefore="1" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="1032,157" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable Accuracy="0.88" BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=GenerateAPTransactions" CvElementArea="888, 791, 79, 26" CvTextArea="918, 797, 20, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="892, 658, 71, 20" DesignTimeScaleFactor="1" FriendlyName="'OK'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;span&amp;gt;span' idx='4' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' type='' class='x-btn-button x-btn-button-default-small x-btn-text    x-btn-button-center ' tag='SPAN' aaname='' check:innerText='OK' /&gt;" Guid="36338eb1-75dd-4ac7-8a59-8c6e435f8826" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAUCAYAAADfqiBGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADvSURBVFhH7ZgxCoQwEEU9Vm4p5CxewANYCbYWgp0WYpFCmE0ikWTNLuywTJblCxZGUszzzR+1UronnHkGFcC8lgNw3nQO4AAOL1fLmDMYio9tmpOh0Cz27rLe1+igruUVyslWcTj1dNjKDTWXzjN1jlUE4xmOvzY71cKTVRjOSmP26afrMRwPswAYZ5osHNdO2UJPe0J7BTh3y+Ra6ofg9OSAJHCuUIpbEHA8qJBLpfJG3hz9eeYonbYcZ+pw98hmjg05zrRS7U6bdWkc/rmtwihmvOecUGUBiZvDVbzEPsDBtxUvq2AOzIE5X//d+wBf2tKhAQfzmgAAAABJRU5ErkJggg==" InformativeScreenshot="c5ab9e894a4ac3ebf200a13b90394b73.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor SyteLine (Test)' /&gt;" SearchSteps="Image" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <ui:GetEnvironmentFolder sap2010:Annotation.AnnotationText="Get system user profile from whatever system the UiPath is running on. " DisplayName="Get Environment Folder" FolderPath="[UserProfile]" sap:VirtualizedContainerService.HintSize="1032,130" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_1" SpecialFolder="UserProfile">
+                      <ui:GetEnvironmentFolder sap2010:Annotation.AnnotationText="Get system user profile from whatever system the UiPath is running on. " DisplayName="Get Environment Folder" FolderPath="[UserProfile]" sap:VirtualizedContainerService.HintSize="1032,127" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_1" SpecialFolder="UserProfile">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:GetEnvironmentFolder>
-                      <ui:ForEachFileX sap2010:Annotation.AnnotationText="Delete all of the files in the download folder of the machine that this RPA runs on. " DisplayName="For Each File in Folder" Folder="[UserProfile + &quot;\Downloads\&quot;]" sap:VirtualizedContainerService.HintSize="1032,494" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                      <ui:ForEachFileX sap2010:Annotation.AnnotationText="Delete all of the files in the download folder of the machine that this RPA runs on. " DisplayName="For Each File in Folder" Folder="[UserProfile + &quot;\Downloads\&quot;]" sap:VirtualizedContainerService.HintSize="1032,488" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                         <ui:ForEachFileX.Body>
                           <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                             <ActivityAction.Argument1>
@@ -1105,13 +1105,13 @@
                             <ActivityAction.Argument2>
                               <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                             </ActivityAction.Argument2>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,196" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,195" sap2010:WorkflowViewState.IdRef="Sequence_25">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="388,81" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[CurrentFile.FullName]" />
+                              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[CurrentFile.FullName]" />
                             </Sequence>
                           </ActivityAction>
                         </ui:ForEachFileX.Body>
@@ -1121,36 +1121,36 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:ForEachFileX>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="3" DisplayName="Click 'Export To Excel'" sap:VirtualizedContainerService.HintSize="1032,158" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="3" DisplayName="Click 'Export To Excel'" sap:VirtualizedContainerService.HintSize="1032,157" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable Accuracy="0.94" BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx?MGForm=GenerateAPTransactions" CvElementArea="655, 156, 22, 24" CvType="Icon" DesignTimeRectangle="349, 130, 33, 33" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Export To Excel'" FullSelectorArgument="&lt;webctrl id='ext-element-30' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-element-30' tag='BUTTON' type='' class='btn-icon' aaname='Export To Excel' check:innerText='Export To Excel' /&gt;" Guid="16828627-6632-41ed-be0f-60f18366d332" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEiSURBVFhH5dZBTsJQEIBhXHge4yU8giuW6gFMvAXsIZCYEF3AQdAQTsG+SaEkNHExdAw10+dveTV1TGDxBfL38d5QFqXTeUzk32H0htEbRm8YvWH0htEbRm8YG7qfbWW5+kCD+Q4/U4Gxxt00+9z8oTiYrod0LfUKjD/QAfRw3bh8T+usVoewh5Ybh4Not+zaWhiPiNr44DyH0G6VLVz3DcYjojY++LMhmmh1CHt7rXBNeC1cgzCCqM3A6Q6hr1a4xrp8SuR50eKzIzwwxnU/lWGbD7DfDNF9zeR2ssFrFRhB0yFuhmsZvUXcBYURxAxxUbjqpcW3z+RlmeMahBHonxMdpM5gnsv4PS9+hrj/Gl8wesPoDaM3jN4wesPoDaOrRPY5SncpeFyPqgAAAABJRU5ErkJggg==" InformativeScreenshot="4cc33f6c34aa372279539306c49d2716.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor SyteLine (Test)' /&gt;" SearchSteps="Image" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1032,828" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1032,820" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
                         <ueab:ExcelProcessScopeX.Body>
                           <ActivityAction x:TypeArguments="ui:IExcelProcess">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,741" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,733" sap2010:WorkflowViewState.IdRef="Sequence_7">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Indicate the file UiPath is Interested in from our local files." CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="540,630" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[UserProfile +&quot;\Downloads\ToExcel_GenerateAPTransactions.csv&quot;]">
+                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Indicate the file UiPath is Interested in from our local files." CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="540,622" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[UserProfile +&quot;\Downloads\ToExcel_GenerateAPTransactions.csv&quot;]">
                                 <ueab:ExcelApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,326" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,322" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ueab:ReadRangeX sap2010:Annotation.AnnotationText="From the excel file we generated that came from SL, we save all of the rows and columns with valid data. " DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,215" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.SelectedSheet]" SaveTo="[POLineData]">
+                                      <ueab:ReadRangeX sap2010:Annotation.AnnotationText="From the excel file we generated that came from SL, we save all of the rows and columns with valid data. " DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,211" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.SelectedSheet]" SaveTo="[POLineData]">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -1170,7 +1170,7 @@
                           </ActivityAction>
                         </ueab:ExcelProcessScopeX.Body>
                       </ueab:ExcelProcessScopeX>
-                      <Assign sap2010:Annotation.AnnotationText="All distinct purchase order numbers from the excel data are saved to the variable POData." sap:VirtualizedContainerService.HintSize="1032,127" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign sap2010:Annotation.AnnotationText="All distinct purchase order numbers from the excel data are saved to the variable POData." sap:VirtualizedContainerService.HintSize="1032,124" sap2010:WorkflowViewState.IdRef="Assign_4">
                         <Assign.To>
                           <OutArgument x:TypeArguments="sd2:DataTable">[POData]</OutArgument>
                         </Assign.To>
@@ -1183,15 +1183,15 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </Assign>
-                      <ui:CommentOut sap2010:Annotation.AnnotationText="This is the production Google Drive location" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1032,719" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                      <ui:CommentOut sap2010:Annotation.AnnotationText="This is the production Google Drive location" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1032,709" sap2010:WorkflowViewState.IdRef="CommentOut_15">
                         <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,609" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,599" sap2010:WorkflowViewState.IdRef="Sequence_67">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntryLocation="{x:Null}" MaxResults="{x:Null}" AllLabels="W10=" sap2010:Annotation.AnnotationText="Go to the invoices google drive, go to the TBP folder, then filter the folder on Amazon business invoices and place the retreived filed into an output variable called matches." AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1C86JWmUkqTz76UGSADddeeOgOuW87AJE" ConnectionId="8840a299-987f-4041-aa34-2c68c904100f" DisplayName="Get File/Folder List" sap:VirtualizedContainerService.HintSize="388,229" sap2010:WorkflowViewState.IdRef="GetFileListConnections_6" LocationFriendlyName="AP TBP" LocationInputMode="Browse" Result="[Matches]" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
+                            <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntryLocation="{x:Null}" MaxResults="{x:Null}" AllLabels="W10=" sap2010:Annotation.AnnotationText="Go to the invoices google drive, go to the TBP folder, then filter the folder on Amazon business invoices and place the retreived filed into an output variable called matches." AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1C86JWmUkqTz76UGSADddeeOgOuW87AJE" ConnectionId="74c9c53c-2f89-4d86-b10d-99e89e828b69" DisplayName="Get File/Folder List" sap:VirtualizedContainerService.HintSize="388,224" sap2010:WorkflowViewState.IdRef="GetFileListConnections_6" LocationFriendlyName="AP TBP" LocationInputMode="Browse" Result="[Matches]" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
                               <uga:GetFileListConnections.Filter>
                                 <ugadf:FileFilterArgument LogicalOperator="And">
                                   <ugadf:FileFilterArgument.Filters>
@@ -1212,7 +1212,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uga:GetFileListConnections>
-                            <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntryLocation="{x:Null}" MaxResults="{x:Null}" AllLabels="W10=" sap2010:Annotation.AnnotationText="Go to the invoices google drive, go to the TBP folder, then filter the folder on Amazon business invoices and place the retreived filed into an output variable called matches." AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Eocy7UWynb20rqL4xObFQgUAx8nCyx7k" ConnectionId="8840a299-987f-4041-aa34-2c68c904100f" DisplayName="Get File/Folder List" sap:VirtualizedContainerService.HintSize="388,229" sap2010:WorkflowViewState.IdRef="GetFileListConnections_7" LocationFriendlyName="AP TBP Extra" LocationInputMode="Browse" Result="[Matches]" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
+                            <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntryLocation="{x:Null}" MaxResults="{x:Null}" AllLabels="W10=" sap2010:Annotation.AnnotationText="Go to the invoices google drive, go to the TBP folder, then filter the folder on Amazon business invoices and place the retreived filed into an output variable called matches." AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Eocy7UWynb20rqL4xObFQgUAx8nCyx7k" ConnectionId="74c9c53c-2f89-4d86-b10d-99e89e828b69" DisplayName="Get File/Folder List" sap:VirtualizedContainerService.HintSize="388,224" sap2010:WorkflowViewState.IdRef="GetFileListConnections_7" LocationFriendlyName="AP TBP Extra" LocationInputMode="Browse" Result="[Matches]" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
                               <uga:GetFileListConnections.Filter>
                                 <ugadf:FileFilterArgument LogicalOperator="And">
                                   <ugadf:FileFilterArgument.Filters>
@@ -1241,19 +1241,54 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="rpabot1@frazerbilt.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="1032,410" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="rpabot1@frazerbilt.com">
+                      <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="rpabot1@frazerbilt.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="1032,409" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_2" UseConnectionService="False" UserEmail="rpabot1@frazerbilt.com">
                         <ugad:GoogleDriveApplicationScope.Body>
                           <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="ugad:IGoogleDriveTarget" Name="GoogleDrive" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,267" sap2010:WorkflowViewState.IdRef="Sequence_116">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntryLocation="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Eocy7UWynb20rqL4xObFQgUAx8nCyx7k" ConnectionId="8840a299-987f-4041-aa34-2c68c904100f" DisplayName="Get File or Folder List" sap:VirtualizedContainerService.HintSize="388,153" sap2010:WorkflowViewState.IdRef="GetFileListConnections_8" LocationFriendlyName="AP TBP Extra" LocationInputMode="Browse" MaxResults="200" Result="[Matches]" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
+                              <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Filter="{x:Null}" ManualEntryLocation="{x:Null}" Result="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="root" ConnectionId="74c9c53c-2f89-4d86-b10d-99e89e828b69" DisplayName="Get File or Folder List" sap:VirtualizedContainerService.HintSize="388,152" sap2010:WorkflowViewState.IdRef="GetFileListConnections_10" LocationFriendlyName="My Drive" LocationInputMode="Browse" MaxResults="200" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
+                                <uga:GetFileListConnections.FolderIdBackup>
+                                  <usau:BackupSlot x:TypeArguments="ugade:EDriveMode" StoredValue="Browse">
+                                    <usau:BackupSlot.BackupValues>
+                                      <scg:Dictionary x:TypeArguments="ugade:EDriveMode, scg:List(x:Object)" />
+                                    </usau:BackupSlot.BackupValues>
+                                  </usau:BackupSlot>
+                                </uga:GetFileListConnections.FolderIdBackup>
+                              </uga:GetFileListConnections>
+                            </Sequence>
+                          </ActivityAction>
+                        </ugad:GoogleDriveApplicationScope.Body>
+                        <ugad:GoogleDriveApplicationScope.CredentialID>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ugad:GoogleDriveApplicationScope.CredentialID>
+                        <ugad:GoogleDriveApplicationScope.CredentialSecret>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ugad:GoogleDriveApplicationScope.CredentialSecret>
+                      </ugad:GoogleDriveApplicationScope>
+                      <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="rpabot1@frazerbilt.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="1032,409" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="rpabot1@frazerbilt.com">
+                        <ugad:GoogleDriveApplicationScope.Body>
+                          <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ugad:IGoogleDriveTarget" Name="GoogleDrive" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,267" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntryLocation="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Eocy7UWynb20rqL4xObFQgUAx8nCyx7k" ConnectionId="74c9c53c-2f89-4d86-b10d-99e89e828b69" DisplayName="Get File or Folder List" sap:VirtualizedContainerService.HintSize="388,152" sap2010:WorkflowViewState.IdRef="GetFileListConnections_8" LocationFriendlyName="AP TBP Extra" LocationInputMode="Browse" MaxResults="200" Result="[Matches]" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
                                 <uga:GetFileListConnections.Filter>
                                   <ugadf:FileFilterArgument LogicalOperator="And">
                                     <ugadf:FileFilterArgument.Filters>
@@ -9145,7 +9180,7 @@
                           <uix:TargetAnchorable Accuracy="0.9" BrowserURL="https://erptest.frazerbilt.net/WSWebClient/WSWebForm.aspx" CvTextArea="128, 270, 49, 14" CvTextArgument="Sign Out" CvType="Text" DesignTimeRectangle="127, 269, 51, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Sign Out'" FullSelectorArgument="&lt;webctrl aaname='Sign Out' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sign Out' tag='SPAN' type='' class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' check:text='Sign Out' /&gt;" Guid="44d246e7-378e-4f66-b104-20f4d9a07b73" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAQCAYAAAC7mUeyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE+SURBVEhL7ZPrjcQgDISv2jRBFe6EKqiCKmjAF2yIh0deeytltbofIyUGPP5s+Ekp8bfoH+ZT1cEEpmXhZRNxqGvRs8P/tyiydzt+Jwq0sPOxiQGMguCG6N0tg3sa/VKg1c+xj7hvrmMY6XyfSA0p1HUDU9DcTcdE6zeFNa6dJspFlW5LHHPC+claE89wznPs1sy7BYLJ2Mil+C1ehDANeLmaALMVsNvpAj3zkTPFZwcmf59csyJJplANGMD0XbV/LdJMMuhNGGzan2FQOAEwyYmOYKzIp2DyQShQBaY3JnMOM+aYxjsYbOLJZOCx15hcuXEyzcQmb+YKTD3XFIR+wz/6XLpm5cAmSIwwq6SDsofYvzAZle43P8tfJdMYfMwfgY7fzCVpQX2XntBrMDJ+6Gjp1tN6w2Q+R18Ek/gX90BVt+tC75AAAAAASUVORK5CYII=" InformativeScreenshot="1944aac7cfaf9f78d84cf50d1427f1a4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Infor SyteLine*' /&gt;" SearchSteps="Image" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <If Condition="[IsNothing(FinalBodyText)]" sap:VirtualizedContainerService.HintSize="1032,353" sap2010:WorkflowViewState.IdRef="If_5">
+                      <If Condition="[IsNothing(FinalBodyText)]" sap:VirtualizedContainerService.HintSize="1032,352" sap2010:WorkflowViewState.IdRef="If_5">
                         <If.Then>
                           <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_31">
                             <sap:WorkflowViewStateService.ViewState>
@@ -9167,7 +9202,7 @@
                           <Sequence sap2010:WorkflowViewState.IdRef="Sequence_32" />
                         </If.Else>
                       </If>
-                      <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[FinalBodyText]" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="1032,470" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="Amazon AP Results" TextBody="[FinalBodyText]" To="[New String(){&quot;rpabot1@frazerbilt.com&quot;,&quot;accounts@frazerbilt.com&quot;,&quot;valeria.zuniga@lkmx.io&quot;}]" UseConnectionService="True">
+                      <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[FinalBodyText]" ConnectionId="7d549abf-e1d2-4fc1-8dae-4bee9245c18e" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="1032,428" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="Amazon AP Results" TextBody="[FinalBodyText]" To="[New String(){&quot;valeria.zuniga@lkmx.io&quot;}]" UseConnectionService="True">
                         <uga:SendEmailConnections.Attachments>
                           <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
                         </uga:SendEmailConnections.Attachments>
