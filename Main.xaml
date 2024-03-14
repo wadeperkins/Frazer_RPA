@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1427,35965</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1427,35815</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -203,7 +203,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1322,35900" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1322,35750" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -255,6 +255,8 @@
       <Variable x:TypeArguments="x:String" Name="JSONKey" />
       <Variable x:TypeArguments="x:Int32" Name="tempcount" />
       <Variable x:TypeArguments="x:Int32" Name="output_distance" />
+      <Variable x:TypeArguments="sd2:DataRow" Name="tempRow" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -301,23 +303,23 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotCredential>
-    <If Condition="[NOT IsNothing(Username) And NOT IsNothing(Password)]" sap:VirtualizedContainerService.HintSize="1260,34763" sap2010:WorkflowViewState.IdRef="If_18">
+    <If Condition="[NOT IsNothing(Username) And NOT IsNothing(Password)]" sap:VirtualizedContainerService.HintSize="1260,34613" sap2010:WorkflowViewState.IdRef="If_18">
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="1226,34581" sap2010:WorkflowViewState.IdRef="Sequence_107">
+        <Sequence sap:VirtualizedContainerService.HintSize="1226,34431" sap2010:WorkflowViewState.IdRef="Sequence_107">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1184,34493" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1184,34343" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <TryCatch.Try>
-              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: SL TEST Environment" sap:VirtualizedContainerService.HintSize="1146,33664" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: SL TEST Environment" sap:VirtualizedContainerService.HintSize="1146,33514" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="909b4594-9fb0-4f35-9e9a-4d5853e492cb" Version="V2" WindowResize="Maximize">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1112,33447" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1112,33297" sap2010:WorkflowViewState.IdRef="Sequence_2">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1443,13 +1445,13 @@
                           </ActivityAction>
                         </ui:ForEachRow.Body>
                       </ui:ForEachRow>
-                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[CurrentIndex]" DataTable="[UpdatedPOList]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1050,20227" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[CurrentIndex]" DataTable="[UpdatedPOList]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1050,20077" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                         <ui:ForEachRow.Body>
                           <ActivityAction x:TypeArguments="sd2:DataRow">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentUpdatedRow" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="940,20041" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="940,19891" sap2010:WorkflowViewState.IdRef="Sequence_11">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:String" Name="currentPDFPONumber" />
                               </Sequence.Variables>
@@ -1590,7 +1592,7 @@
                               </Sequence>
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="898,143" sap2010:WorkflowViewState.IdRef="LogMessage_22" Message="[Math.Round(Double.Parse(PDFTotal) - Double.Parse(Promos), 2)]" />
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="898,143" sap2010:WorkflowViewState.IdRef="LogMessage_23" Message="[Double.Parse(SytelineTotal)]" />
-                              <If Condition="[Math.Round(Double.Parse(PDFTotal) - Double.Parse(Promos), 2) = Double.Parse(SytelineTotal)]" sap:VirtualizedContainerService.HintSize="898,11476" sap2010:WorkflowViewState.IdRef="If_22">
+                              <If Condition="[Math.Round(Double.Parse(PDFTotal) - Double.Parse(Promos), 2) = Double.Parse(SytelineTotal)]" sap:VirtualizedContainerService.HintSize="898,11326" sap2010:WorkflowViewState.IdRef="If_22">
                                 <If.Then>
                                   <Sequence sap:VirtualizedContainerService.HintSize="528,4173" sap2010:WorkflowViewState.IdRef="Sequence_127">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -1779,9 +1781,10 @@
                                   </Sequence>
                                 </If.Then>
                                 <If.Else>
-                                  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="686,7121" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                                  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="686,6971" sap2010:WorkflowViewState.IdRef="Sequence_131">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="sd2:DataTable" Name="currentInvoiceLines" />
+                                      <Variable x:TypeArguments="sd2:DataTable" Name="partialMatchInvoiceItems" />
                                     </Sequence.Variables>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1789,6 +1792,7 @@
                                         <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
+                                    <ui:BuildDataTable DataTable="[partialMatchInvoiceItems]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="644,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_8" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Description&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Total&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
                                     <Sequence DisplayName="Get Current Invoice Items" sap:VirtualizedContainerService.HintSize="644,927" sap2010:WorkflowViewState.IdRef="Sequence_129">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1836,28 +1840,25 @@
                                       </ui:FilterDataTable.SelectColumns>
                                     </ui:FilterDataTable>
                                     <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[currentInvoiceLines]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="644,116" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="currentItems" WorkbookPath="\\eden5\profiles$\rpapayables\Desktop\New Microsoft Excel Worksheet.xlsx" />
-                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[currentInvoiceLines]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="644,1845" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[currentInvoiceLines]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="644,1495" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
                                       <ui:ForEachRow.Body>
                                         <ActivityAction x:TypeArguments="sd2:DataRow">
                                           <ActivityAction.Argument>
                                             <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentLine" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="528,1659" sap2010:WorkflowViewState.IdRef="Sequence_142">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="528,1309" sap2010:WorkflowViewState.IdRef="Sequence_142">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[currentInvoiceItems]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="486,1571" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
+                                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[currentInvoiceItems]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="486,1221" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
                                               <ui:ForEachRow.Body>
                                                 <ActivityAction x:TypeArguments="sd2:DataRow">
                                                   <ActivityAction.Argument>
                                                     <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentItem" />
                                                   </ActivityAction.Argument>
-                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,1385" sap2010:WorkflowViewState.IdRef="Sequence_141">
-                                                    <Sequence.Variables>
-                                                      <Variable x:TypeArguments="x:String" Name="variable1" />
-                                                    </Sequence.Variables>
+                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,1035" sap2010:WorkflowViewState.IdRef="Sequence_141">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1870,19 +1871,17 @@
                                                         <OutArgument x:TypeArguments="x:Int32" x:Key="output_distance">[output_distance]</OutArgument>
                                                       </ui:InvokeCode.Arguments>
                                                     </ui:InvokeCode>
-                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,143" sap2010:WorkflowViewState.IdRef="LogMessage_28" Message="[Double.Parse(CurrentLine(&quot;To Vch/Adj&quot;).ToString)]" />
-                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,143" sap2010:WorkflowViewState.IdRef="LogMessage_29" Message="[Double.Parse(CurrentLine(&quot;Unit Cost&quot;).ToString)]" />
-                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,143" sap2010:WorkflowViewState.IdRef="LogMessage_30" Message="[Double.Parse(output_distance.ToString)]" />
-                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,143" sap2010:WorkflowViewState.IdRef="LogMessage_31" Message="[Double.Parse(CurrentItem(&quot;Total&quot;).ToString.Replace(&quot;$&quot;,&quot;&quot;))]" />
-                                                    <If Condition="[Double.Parse(output_distance.ToString) &lt; 85 AND Math.Round(Double.Parse(CurrentLine(&quot;To Vch/Adj&quot;).ToString) * Double.Parse(CurrentLine(&quot;Unit Cost&quot;).ToString), 2) = Double.Parse(CurrentItem(&quot;Total&quot;).ToString.Replace(&quot;$&quot;,&quot;&quot;))]" sap:VirtualizedContainerService.HintSize="410,360" sap2010:WorkflowViewState.IdRef="If_23">
+                                                    <If Condition="[Double.Parse(output_distance.ToString) &lt; 85 AND Math.Round(Double.Parse(CurrentLine(&quot;To Vch/Adj&quot;).ToString) * Double.Parse(CurrentLine(&quot;Unit Cost&quot;).ToString), 2) = Double.Parse(CurrentItem(&quot;Total&quot;).ToString.Replace(&quot;$&quot;,&quot;&quot;))]" sap:VirtualizedContainerService.HintSize="410,742" sap2010:WorkflowViewState.IdRef="If_23">
                                                       <If.Then>
-                                                        <Sequence sap:VirtualizedContainerService.HintSize="376,178" sap2010:WorkflowViewState.IdRef="Sequence_143">
+                                                        <Sequence sap:VirtualizedContainerService.HintSize="376,560" sap2010:WorkflowViewState.IdRef="Sequence_143">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                           <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[CurrentLine(&quot;Item Description&quot;).ToString()]" />
+                                                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentLine(&quot;Item Description&quot;), CurrentItem(&quot;Total&quot;)}]" DataTable="[partialMatchInvoiceItems]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_8" />
+                                                          <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[partialMatchInvoiceItems]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="Matches" WorkbookPath="\\eden5\profiles$\rpapayables\Desktop\New Microsoft Excel Worksheet.xlsx" />
                                                         </Sequence>
                                                       </If.Then>
                                                       <If.Else>
@@ -2066,6 +2065,7 @@
                                         </Sequence>
                                       </ui:CommentOut.Body>
                                     </ui:CommentOut>
+                                    <ui:BuildDataTable DataTable="[currentInvoiceItems]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="410,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_9" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Description&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Qty&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Unit_x0020_Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Total&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Tax&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
                                   </Sequence>
                                 </If.Else>
                               </If>
