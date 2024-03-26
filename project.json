@@ -12,7 +12,8 @@
     "UiPath.System.Activities": "[23.10.5]",
     "UiPath.Testing.Activities": "[23.10.1]",
     "UiPath.UIAutomation.Activities": "[23.10.8]",
-    "UiPath.WebAPI.Activities": "[1.18.0]"
+    "UiPath.WebAPI.Activities": "[1.18.0]",
+    "UiPathTeam.AttendedRobotStatus.Activities": "[2.0.0]"
   },
   "webServices": [],
   "entitiesStores": [],
