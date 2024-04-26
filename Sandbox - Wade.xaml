@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1794,35863</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1604,35663</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -211,7 +211,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1614,35638" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1614,35598" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -302,17 +302,17 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotCredential>
-    <If Condition="[NOT IsNothing(Username) And NOT IsNothing(Password)]" sap:VirtualizedContainerService.HintSize="1552,34545" sap2010:WorkflowViewState.IdRef="If_18">
+    <If Condition="[NOT IsNothing(Username) And NOT IsNothing(Password)]" sap:VirtualizedContainerService.HintSize="1552,34505" sap2010:WorkflowViewState.IdRef="If_18">
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="1518,34363" sap2010:WorkflowViewState.IdRef="Sequence_107">
+        <Sequence sap:VirtualizedContainerService.HintSize="1518,34323" sap2010:WorkflowViewState.IdRef="Sequence_107">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1476,34275" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1476,34235" sap2010:WorkflowViewState.IdRef="TryCatch_3">
             <TryCatch.Try>
-              <ui:BlockUserInput TimeoutMS="{x:Null}" BlockType="All" ContinueOnError="True" DisplayName="Block User Input" sap:VirtualizedContainerService.HintSize="1438,33754" sap2010:WorkflowViewState.IdRef="BlockUserInput_1" KeyModifiers="Alt" Keys="m" SpecialKey="False">
+              <ui:BlockUserInput TimeoutMS="{x:Null}" BlockType="All" ContinueOnError="True" DisplayName="Block User Input" sap:VirtualizedContainerService.HintSize="1438,33714" sap2010:WorkflowViewState.IdRef="BlockUserInput_1" KeyModifiers="Alt" Keys="m" SpecialKey="False">
                 <ui:BlockUserInput.Body>
                   <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1402,33587" sap2010:WorkflowViewState.IdRef="Sequence_153">
                     <sap:WorkflowViewStateService.ViewState>
@@ -328,7 +328,7 @@
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1268,31765" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1268,31805" sap2010:WorkflowViewState.IdRef="Sequence_2">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1009,7 +1009,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NTypeInto>
-                                <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="1206,80" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_9" InfoLvl="False" Message="Searching 'AMAZ001'" WarnLvl="True" />
+                                <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="1206,80" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_9" InfoLvl="False" Message="Searching 'ANIX001'" WarnLvl="True" />
                                 <uix:NKeyboardShortcuts ActivateBefore="True" sap2010:Annotation.AnnotationText="Keyboard Shortcut to ensure that the correct vendor is selected. " ClickBeforeMode="None" DelayAfter="2" DelayBefore="2" DelayBetweenShortcuts="1" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1206,221" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V3">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1223,20 +1223,20 @@
                                   </ugad:GoogleDriveApplicationScope.CredentialSecret>
                                 </ugad:GoogleDriveApplicationScope>
                                 <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="1206,80" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_52" InfoLvl="False" Message="[invoices.Count.ToString + &quot;  Invoices downloaded&quot;]" WarnLvl="True" />
-                                <ui:ForEach x:TypeArguments="ugdm:GDriveRemoteItem" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1206,21351" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[invoices]">
+                                <ui:ForEach x:TypeArguments="ugdm:GDriveRemoteItem" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1206,21391" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[invoices]">
                                   <ui:ForEach.Body>
                                     <ActivityAction x:TypeArguments="ugdm:GDriveRemoteItem">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="ugdm:GDriveRemoteItem" Name="CurrentInvoice" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1172,21165" sap2010:WorkflowViewState.IdRef="Sequence_204">
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1172,21205" sap2010:WorkflowViewState.IdRef="Sequence_204">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[CurrentInvoice.LocalCopy.LocalPath.ToString()]" sap:VirtualizedContainerService.HintSize="1130,82" sap2010:WorkflowViewState.IdRef="ReadPDFText_5" Range="All" Text="[strPDF]" />
-                                        <ui:Matches BuilderPattern="(?&lt;=PO\s#\s)(.*?(\S+))" DisplayName="Get PDFPONumber" FirstMatch="[PDFPONumber]" sap:VirtualizedContainerService.HintSize="1130,60" sap2010:WorkflowViewState.IdRef="Matches_13" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=PO\\s#\\s)(.*?(\\S+))&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=PO\s#\s)(.*?(\S+))" RegexOption="IgnoreCase, Compiled" />
+                                        <ui:ReadPDFText DisplayName="Read PDF Text" FileName="[CurrentInvoice.LocalCopy.LocalPath.ToString()]" sap:VirtualizedContainerService.HintSize="1130,82" sap2010:WorkflowViewState.IdRef="ReadPDFText_5" PreserveFormatting="True" Range="All" Text="[strPDF]" />
+                                        <ui:Matches BuilderPattern="\b\d{8}\b" DisplayName="Get PDFPONumber" FirstMatch="[PDFPONumber]" sap:VirtualizedContainerService.HintSize="1130,60" sap2010:WorkflowViewState.IdRef="Matches_13" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;\\b\\d{8}\\b&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\b\d{8}\b" RegexOption="IgnoreCase, Compiled" />
                                         <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter the SytelineItems dataset where the PO number = the PDFPONumber" DataTable="[sytelineItems]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="1130,203" sap2010:WorkflowViewState.IdRef="FilterDataTable_9" OutputDataTable="[FilteredPOData]" SelectColumnsMode="Remove">
                                           <ui:FilterDataTable.Filters>
                                             <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
@@ -1261,7 +1261,7 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:FilterDataTable>
-                                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Infor SyteLine (Test)" sap:VirtualizedContainerService.HintSize="1130,20612" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InteractionMode="DebuggerApi" ScopeGuid="4cbaa5bc-72f4-4365-92e2-0534119a4273" Version="V2">
+                                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Infor SyteLine (Test)" sap:VirtualizedContainerService.HintSize="1130,20652" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InteractionMode="DebuggerApi" ScopeGuid="4cbaa5bc-72f4-4365-92e2-0534119a4273" Version="V2">
                                           <uix:NApplicationCard.Body>
                                             <ActivityAction x:TypeArguments="x:Object">
                                               <ActivityAction.Argument>
